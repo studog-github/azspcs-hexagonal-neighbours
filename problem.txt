@@ -1,46 +1,53 @@
 http://azspcs.com/Contest/HexagonalNeighbors
 
+
 The Problem
 ===========
 
-In this contest we will fill regular hexagonal grids^1 with positive integers so that when a cell contains some integer k,
-the integers 1, 2, ..., k-1 will be among that cell's neighbors^2. Figure 1 is an example.
+In this contest we will fill regular hexagonal grids[1] with positive integers so that when a cell
+contains some integer k, the integers 1, 2, ..., k-1 will be among that cell's neighbors[2].
+Figure 1 is an example.
 
+    Figure 1    Figure 2
 
-			Figure 1	Figure 2
-Figure 2 is the same as Figure 1, except that we've used blue to single out one cell and red for its neighbors. Notice
-that, because the blue cell is 4, its neighbors include 1, 2 and 3.
+Figure 2 is the same as Figure 1, except that we've used blue to single out one cell and red for its
+neighbors. Notice that, because the blue cell is 4, its neighbors include 1, 2 and 3.
 
-^1 A hexagonal grid is a grid whose cells are regular hexagons. A regular hexagonal grid is one that has six sides and
-has the same number of cells along each side. A regular hexagonal grid has n^3 - (n - 1)^3 cells, where n is the number
-of hexagons on each side, and is said to be "order n".
+[1] A hexagonal grid is a grid whose cells are regular hexagons. A regular hexagonal grid is one
+    that has six sides and has the same number of cells along each side. A regular hexagonal grid
+    has n^3 - (n - 1)^3 cells, where n is the number of hexagons on each side, and is said to be
+    "order n".
 
-^2 We consider two cells to be neighbors if they share a side. Interior cells, for example, have 6 neighbors and corner
-cells have 3.
+[2] We consider two cells to be neighbors if they share a side. Interior cells, for example, have
+    6 neighbors and corner cells have 3.
 
 
 The Contest
-For each value of n from 3 through 27 submit an order n hexagonal grid as described above. Your objective, for each n,
-is to maximize the sum of the grid's cells. For example, in Figure 1 the sum of the cells is 47.
+===========
+
+For each value of n from 3 through 27 submit an order n hexagonal grid as described above. Your
+objective, for each n, is to maximize the sum of the grid's cells. For example, in Figure 1 the sum
+of the cells is 47.
 
 For each value of n you can submit more than one grid, but only your best grid will count.
-
 
 
 How to Enter
 ===========
 
-Paste your grids into the appropriate box on the Submit page and click Submit Entry. Format your grids as follows:
+Paste your grids into the appropriate box on the Submit page and click Submit Entry. Format your
+grids as follows:
 
-  - Represent each row of your grid as a comma-delimited list of integers and enclose the list in parentheses. An order
-    n grid has 2n - 1 rows.
+  - Represent each row of your grid as a comma-delimited list of integers and enclose the list in
+    parentheses. An order n grid has 2n - 1 rows.
   - Enter the rows as a comma-delimited list.
-  - To submit more than one grid at a time, separate them with semicolons. Do not put a semicolon after your last grid.
-  - Include spaces and line breaks anywhere you like (except within a number) to improve readability.
+  - To submit more than one grid at a time, separate them with semicolons. Do not put a semicolon
+    after your last grid.
+  - Include spaces and line breaks anywhere you like (except within a number) to improve
+    readability.
 
 For example, if you wanted to submit the grid shown above you could enter:
 (4,3,2), (2,1,3,1), (3,1,5,2,4), (2,1,4,3), (2,3,1)
-
 
 
 The Scoring System
@@ -48,18 +55,20 @@ The Scoring System
 
 The entrant with the highest "contest score" wins. Here's how we calculate your contest score:
 
-  - For each of the 25 values of n, we find your best grid (that is, the one whose cells have the largest sum). Your
-    "raw score" for that n is the total of the values in the grid, minus (3n^2 - 3n + 1). For example, for the grid shown
-    above, the raw score is 47 - 19 = 28.
-  - For each of the 25 values of n, we compute your "subscore". We do this by dividing each n's raw score by the highest
-    raw score for that n across all entrants. Every subscore therefore has a value from 0 to 1.
+  - For each of the 25 values of n, we find your best grid (that is, the one whose cells have the
+    largest sum). Your "raw score" for that n is the total of the values in the grid, minus
+    (3n^2 - 3n + 1). For example, for the grid shown above, the raw score is 47 - 19 = 28.
+  - For each of the 25 values of n, we compute your "subscore". We do this by dividing each n's raw
+    score by the highest raw score for that n across all entrants. Every subscore therefore has a
+    value from 0 to 1.
   - Your contest score is the sum of your 25 subscores.
 
-If two entrants have the same contest score, we break the tie by giving preference to the entrant whose last improvement
-was submitted least recently.
+If two entrants have the same contest score, we break the tie by giving preference to the entrant
+whose last improvement was submitted least recently.
 
-Let's walk through a simplified example. Suppose we modify the contest by asking you to submit grids for only three
-values of n: 3, 4 and 5. Further suppose that we have 3 entrants: Amy, Bernadette and Penny.
+Let's walk through a simplified example. Suppose we modify the contest by asking you to submit grids
+for only three values of n: 3, 4 and 5. Further suppose that we have 3 entrants: Amy, Bernadette and
+Penny.
 
 We begin by summing the cell values in each submitted grid:
 
