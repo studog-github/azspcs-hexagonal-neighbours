@@ -5,6 +5,10 @@ Hex paper from https://incompetech.com/graphpaper/
 
 Make it double-sided:
 # gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dAutoRotatePages=/None -sOutputFile=8.5x11-2sided-greyHexSmall.pdf 8.5x11greyHexSmall.pdf 8.5x11greyHexSmall.pdf
+Or, print it double-sided by 'print pages' '1,1', set the number of copies and set for double-sided.
+
+
+Hex grid information: https://www.redblobgames.com/grids/hexagons/
 
 
 An order n grid has:
@@ -67,3 +71,6 @@ The order 2 grid optimal score is 28:
 (1, 2), (6, 7, 3), (5, 4)
 Or is it?? Probably not. It is not. A corner hex can have a maximum value of 4 since it has 3
 neighbours.
+
+The order 2 grid optimal score appears to be 19:
+(3, 2), (4, 1, 4), (2, 3)
