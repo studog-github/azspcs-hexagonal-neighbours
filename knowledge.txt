@@ -63,6 +63,8 @@ The upper bound on the best score of an order n grid is when all the hexes are s
 7 * hexes.
 
 The lower bound can be improved: some of those hexes can contain 2s without too much trouble.
+In fact, rings with a center 2 and surrounding 1s is an easy improvement. Or rows of 2s, since there
+are free neighbours.
 
 The upper bound can probably be improved significantly, perhaps by leveraging the knowledge about
 the optimal order 2 grid.
@@ -74,3 +76,5 @@ neighbours.
 
 The order 2 grid optimal score appears to be 19:
 (3, 2), (4, 1, 4), (2, 3)
+
+A grid always has a center hex.
